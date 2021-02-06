@@ -6,6 +6,7 @@ body {
 	font-family: "Gotham Pro";
 }
 
+
 .wrapper {
 	margin: auto;
 	max-width: 1030px;
@@ -21,16 +22,27 @@ body {
     border: dashed 1px red;
 }
 
+
+.checkbox {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 .menu-container {
 	display: flex;
 	height: 55px;
-	max-width: 1310px;
+	max-width: 1170px;
 	text-align: center;
-	padding-top: 32px;
-	padding-left: 70px;
+	padding-top: 29px;
+	padding-right: 0;
+
 }
+
 .menu	{
 	display: flex;
+	padding-left: 0;
+	margin-right: 0;
+
 }
 
   li {
@@ -38,19 +50,24 @@ body {
   	border: dotted 1px red;
   	text-align: center;
   	list-style-type: none;
-  	margin-left: 35px;
-  }
+  	margin-left: 30px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	letter-spacing: 0.3px;
+  	
+  	}
 
 .menu__item {
 	text-decoration: none;
-
+	font-color: #000;
+	font-size: 12px;
 }
 
 
 .search input {
-	width: 178px;
+	width: 154px;
 	height: 18px;
-	padding: 3px 12px;
+	padding: 4px 12px;
 	margin-right:15px 
 	font-size: 1.3rem;
 	outline: none;
@@ -59,7 +76,10 @@ body {
 	background-image: url(images/search.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	//outline: none;
+}
+
+.search {
+	margin-left: 188px;
 }
 
 .container {
@@ -67,8 +87,80 @@ body {
 	background-position: 5px 5px;
 }
 
+.menu-item:last-child {
+    padding-right: 0;
+    margin-right: 0;
+  }  
+
+  /*.product-container > p {
+  	display: inline-block;
+  }
+ */
+/*.checkbox-menu {
+	width: 900px;
+}*/
+
+/*.last-menu-items {
+    width: 228px;
+    list-style-type: none;
+    display: inline-block;
+    display: flex;
+}*/
+
+/**/
+
+/*.last-menu-items li {
+  	display: block;
+  	text-align: center;
+  	list-style-type: none;
+  	text-align: center;
+}*/
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.top-picture {
+	position: relative;
+	top: 16px;
+}
+
+.moto p {
+	display: block;
+    width: 195px;
+    left: 61px;
+    position: absolute;
+    top: 59px;
+    color: #fff;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.moto >p3 {
+    display: block;
+    width: 195px;
+    left: 60px;
+    position: absolute;
+    top: 192px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
+
+.featured-product>h1 {
+	text-transform: uppercase;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 44px;
+	
+}
+
+
 .products {
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-row-gap: 37px;
+	/*grid-template-columns: repeat(3, 1fr);*/
+	grid-template-rows: 50px auto 50px;
+	//grid-row-gap: 37px;
 }
