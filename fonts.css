@@ -5,3 +5,12 @@
     font-weight: 400;
     font-style: normal;
   }
+
+
+@font-face {
+    font-family: 'Gotham Pro bold';
+    src: url(fonts/gotham_pro_bold-webfont.woff2) format('woff2'),
+         url(fonts/gotham_pro_bold-webfont.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
