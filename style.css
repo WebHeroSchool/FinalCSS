@@ -44,18 +44,8 @@ body {
 	display: flex;
 	padding-left: 16px;
 	max-width: 1200px;
-	//font-color: #000;
+
 }
-
-
-
-/*.menu__item > #3 {
-	padding-left: 3px;
-}*/
-
-/*.menu > li > li > li {
-	padding-left: 15px;
-}*/
 
 
 li {
@@ -67,8 +57,6 @@ li {
   	font-weight: 900;
   	text-transform: uppercase;
   	letter-spacing: 0.3px;
-  	;
-
 }
 
 li:not(:last-child){
@@ -76,6 +64,7 @@ li:not(:last-child){
 }
 
 .menu__item {
+	font-color: #000;
 	text-decoration: none;
 	font-size: 12px;
 	font-weight: 900;	
@@ -111,7 +100,6 @@ li:not(:last-child){
 
 .menu__item_flag {
     padding-left: 7px;
-   
 }  
 
 .cart {
@@ -307,6 +295,12 @@ li:not(:last-child){
     font-size: 12px;
     line-height: 49px;
     text-transform: uppercase;
+    font-weight: 900;
+}
+
+.story-container > p3 {
+    font-family: "Gotham Pro bold";
+  	font-weight: 900;
 }
 
 .recent-stories > h1 {
@@ -315,7 +309,7 @@ li:not(:last-child){
     font-size: 22px;
     text-align: center;
     padding-top: 57px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
