@@ -48,16 +48,6 @@ body {
 }
 
 
-
-/*.menu__item > #3 {
-	padding-left: 3px;
-}*/
-
-/*.menu > li > li > li {
-	padding-left: 15px;
-}*/
-
-
 li {
   	display: inline-block;
   	text-align: center;
@@ -78,6 +68,7 @@ li:not(:last-child){
 	text-decoration: none;
 	font-size: 12px;
 	font-weight: 900;	
+	color: #000
 }
 
 
@@ -108,7 +99,7 @@ li:not(:last-child){
 
 
 .menu__item_flag {
-    padding-left: 5px;
+    padding-left: 7px;
 }  
 
 .cart {
@@ -134,7 +125,7 @@ li:not(:last-child){
     width: 195px;
     left: 61px;
     position: absolute;
-    top: 59px;
+    top: 62px;
     color: #fff;
     font-size: 27px;
     text-transform: uppercase;
@@ -214,35 +205,35 @@ li:not(:last-child){
 	padding: 5px;
 }
 
-.circle__grey {
+.color-pick__grey {
     background-color: #C4C4C4;
     width: 7px;
     height: 7px;
     border-radius: 50%;
 }
    
-.circle__black {
+.color-pick__black {
     background-color: #0E1211;
     width: 7px;
     height: 7px;
     border-radius: 50%;
 }
 
-.circle__red {
+.color-pick__red {
     background-color: #B62E3C;
     width: 7px;
     height: 7px;
     border-radius: 50%;
 }
 
-.circle__yellow {
+.color-pick__yellow {
     background-color: #FDB431;
     width: 7px;
     height: 7px;
     border-radius: 50%;
 }
 
-.circle__orange {
+.color-pick__orange {
     background-color: #E29D69;
     width: 7px;
     height: 7px;
@@ -304,6 +295,12 @@ li:not(:last-child){
     font-size: 12px;
     line-height: 49px;
     text-transform: uppercase;
+    font-weight: 900;
+}
+
+.story-container > p3 {
+    font-family: "Gotham Pro bold";
+  	font-weight: 900;
 }
 
 .recent-stories > h1 {
@@ -312,7 +309,7 @@ li:not(:last-child){
     font-size: 22px;
     text-align: center;
     padding-top: 57px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
