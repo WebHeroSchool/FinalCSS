@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: "Gotham Pro";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
 
@@ -11,6 +15,8 @@ body {
     margin: auto;
     max-width: 1170px;
     width: 100%;
+    overflow: hidden;
+
 }
 
 
@@ -149,9 +155,9 @@ li:not(:last-child){
 .top-picture-text h1 {
     font-size: 28px;
     text-transform: uppercase;
-    line-height: 32px;
-    margin-bottom: 0;
-    width: 20%;
+    line-height: 30px;
+    margin-bottom: 6px;
+    width: 37%;
 }
 
 .top-picture-text > p {
@@ -309,15 +315,15 @@ li:not(:last-child){
     margin-left: 70px;
     background: #000;
     color: #fff;
-    padding-top: 2px;
     display: flex;
+    padding-bottom: 10px;
 }
 
 .info-image {
   min-width: 645px;
   height: 369px;
   background: no-repeat 100% 100% url('images/info image.jpg');
-  margin: 6% 3%;
+  margin: 5.6% 3%;
 }
 
 .info {
@@ -328,7 +334,7 @@ li:not(:last-child){
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 126px 6px 0 11px;
+  margin: 125px 6px 0 11px;
 }
 
 .info-text h1 {
@@ -347,6 +353,7 @@ li:not(:last-child){
   font-weight: 900;
   margin-block-start: 0;
   width: 88%;
+  padding-top: 2px
 }
 
 .info-text > p:last-child {
@@ -398,8 +405,8 @@ li:not(:last-child){
 }
 
  h2 {
-    font-size: 17px;
-    padding-top: 18px;
+    font-size: 14px;
+    padding-top: 16px;
     margin-bottom: 0;
     letter-spacing: 0.8px;
 }
@@ -408,8 +415,9 @@ li:not(:last-child){
 .story-container > p  {
     margin-top: 9px;
     font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 3px;
+    line-height: 18px;
+    margin-bottom: 6px;
+    width: 305px;
 }
 
 .learn-more {
@@ -421,7 +429,12 @@ li:not(:last-child){
     width: 307px;
     left: 12px;
     height: 20px;
-    background: no-repeat 100% 100% url(images/Arrow black.png);
+    //background: no-repeat 100% 100% url(images/Arrow black.png);
+    //line-height: 16px;
+}
+
+.learn-more p {
+    margin-top: 7px;
 }
 
 .date {
@@ -432,13 +445,12 @@ li:not(:last-child){
 }
 
 .gallery {
-    padding-top: 82px;
+    padding-top: 78px;
 }
 
 .hashtag {
     display: flex;
     justify-content: flex-end;
-    margin-top: 73  px;
     font-size: 18px;
     padding-right: 71px;
     text-transform: uppercase;
@@ -461,10 +473,11 @@ li:not(:last-child){
 .footer {
     max-width: 1170px;
     min-height: max-content;
-    margin: auto;
-    width: 66%;
+    margin-top: auto;
+    width: 68.8%;
     color: #fff;
     display: flex;
+    margin-left: 17%;
 }
 
 
@@ -486,7 +499,7 @@ li:not(:last-child){
 
 
 .footer-links > p:first-child {
-    margin-top: 67px;
+    margin-top: 66px;
     font-size: 12px;
     letter-spacing: 0.1px;
 }
@@ -495,16 +508,30 @@ a {
     line-height: 17px;
 }
 
+.footer__newsletter {
+    margin-bottom: 4px;
+}
+
+
 .button {
     width: 136px;
     height: 30px;
-    margin-left: 22px;
     font-size: 10px;
     color: #fff;
-    padding-top: 6px;
+    padding-top: 4px;
     background: #000;
     border: 1.5px solid #fff;
-    margin-bottom: 0;
+    margin-top: 11px;
+}
+
+
+
+.social-media {
+    display: flex;
+    column-gap: 25px;
+    padding-top: 34px;
+    padding-left: 0px;
+    margin-bottom: 39px;
 }
 
 .copyright {
@@ -512,36 +539,9 @@ a {
     justify-content: center;
     max-width: 1170px;
     font-size: 12px;
-    padding-top: 4px;
+    padding-top: 2px;
     color: #fff;
-}
-/*.footer-links #3column {
-
-padding-left: 33px;
-}*/
-/*#2column {
-    margin-left: 9px;
-}*/
-
-
-
-/*#4column {
-    background: no-repeat 100% 100% url(images/Facebook.png);
-    width: 307px;
-    left: 12px;
-    height: 20px
-}*/
-
-.social-media {
-    display: flex;
-    justify-content: center;
-    padding-top: 23px;
-    padding-right: 12px;
-}
-
-.social-media > a {
-    margin: 13px;
-    margin-bottom: 36px;
+    margin-bottom: 0;
 }
 
 
@@ -555,10 +555,6 @@ padding-left: 33px;
 
 .menu-container {
     max-width: 1024px;
-
-}
-
-.menu-container {
     padding-left: 50px;
 }
 
@@ -575,9 +571,19 @@ padding-left: 33px;
     width: 134px;
 }
 
+.cart {
+    position: relative;
+    top: 4px;
+    right: 8px;
+}
+
 .menu__item_flag {
     padding-left: 0px;
 
+}
+
+li {
+    margin-left: 30px;
 }
 
 li:not(:last-child) {
@@ -601,6 +607,11 @@ li:not(:last-child) {
 .top-picture {
     top: 18px;
     left: 47px;
+}
+
+.top-image {
+    width: 930px;
+    height: 253px;
 }
 
 .moto >p3 {
