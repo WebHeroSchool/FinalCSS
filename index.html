@@ -12,27 +12,38 @@
   <div class="wrapper">
     <header class="header">
 		  <div class="menu-container">
-		  	<div class="logo">
-		  	<img src="images/logo.png" alt="">
+		  	<div class="logo" id="logo1">
 			</div>
+
+			<div class="logo2">
+			</div>
+
 			<input type="checkbox" id="checkbox-menu">
 		  	<label for="checkbox-menu">
+		  		<div class="hamburger">
+              		<div></div>
+            	</div>
 		  	  <ul class="menu">
-		  	    <li><a class="menu__item" href="#">shop</a></li>
-		  	  	<li><a class="menu__item" href="#">news</a></li>
-		  	    <li><a class="menu__item" href="#">team</a></li>
-			  	<li><a class="menu__item" href="#">legacy</a></li>
-			    <li><a class="menu__item" href="#">help</a></li>
+		  	    <li class="menu__item"><a class="menu__link" href="#">shop</a></li>
+		  	  	<li class="menu__item"><a class="menu__link" href="#">news</a></li>
+		  	    <li class="menu__item"><a class="menu__link" href="#">team</a></li>
+			  	<li class="menu__item"><a class="menu__link" href="#">legacy</a></li>
+			    <li class="menu__item"><a class="menu__link" href="#">help</a></li>
 
-		  	  	<div class="search">
-		  	  		<div class="container">
-		  	  			<input type="text"><a href="#"></a>
+			    <li>
+			    	<div class="search">
+			    		<!-- нужен? -->
+		  	  			<div class="container"> 
+		  	  				<input type="text"><a href="#"></a>
+		  	  			</div>
 		  	  		</div>
-		  	  	</div>
+			    </li>
 
-				 <li><a class="menu__item" href="#">sign in</a></li>
-				 <li><a class="menu__item" href="#">cart <img class="cart" src="images/cart.png" alt=""></a></li>
-				 <li><a class="menu__item_flag" href="#"><img src="images/flagUS.png" alt=""></a></li>
+		  	  	
+
+				 <li class="menu__item"><a class="menu__link" href="#">sign in</a></li>
+				 <li class="menu__item"><a class="menu__link" href="#">cart <img class="cart" src="images/cart.png" alt=""></a></li>
+				 <li class="menu__item"><a class="menu__link" href="#"><img src="images/flagUS.png" alt=""></a></li>
 		  	  </ul>
 		  	</label>
 		  </div>
@@ -136,7 +147,6 @@
 		<section class="info">
 			<div class="wrapper-info">
 				<div class="info-image">
-					<!-- <img src="images/info image.jpg" alt=""> -->
 				</div>
 				<div class="info-text">
 					<h1>Legendary footwear reborn</h1>
