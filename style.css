@@ -92,7 +92,7 @@ body {
 
 
 .search {
-    margin-left: 144px
+    margin-left: 171px
 }
 
 
@@ -213,7 +213,6 @@ body {
     font-weight: 600;
     display: inline-flex;
     justify-content: space-between;
-    column-gap: 10px;
 }
 
 .price, .color-pick {
@@ -363,29 +362,42 @@ body {
 
 .story1-image {
     height: 147px;
+    width: 307px;
     background: no-repeat 100% 100% url('images/story1.jpg');
-    padding-top: 5px;
+    padding-top: 22px;
 }
 
 .story2-image {
     height: 147px;
+    width: 307px;
     background: no-repeat 100% 100% url('images/story2.jpg');
-    padding-top: 5px;
+    padding-top: 22px;
+    margin-left: 55px;
+
+}
+
+.story2 .story-container {
+    margin-left: 55px;
 }
 
 .story3-image {
     height: 147px;
+    width: 307px;
     background: no-repeat 100% 100% url('images/story3.jpg');
-    padding-top: 5px;
+    padding-top: 22px;
+    margin-left: 53px;
+
 }
 
-.stories {
-    display: grid;
-    grid-template-columns: 307px 1fr 1fr;
-    grid-gap: 55px;
-    margin: 0 70px;
-    padding-top: 18px;
+.story3 .story-container {
+    margin-left: 55px;
+}
 
+
+.stories {
+    display: flex;
+    margin: 0 70px;
+    width: 1030px;
 }
 
  h2 {
@@ -413,8 +425,6 @@ body {
     width: 307px;
     left: 12px;
     height: 20px;
-    //background: no-repeat 100% 100% url(images/Arrow black.png);
-    //line-height: 16px;
 }
 
 .learn-more p {
@@ -624,47 +634,54 @@ li {
 
 .product1 > img {
     padding-left: 33px;
-    width: 106%;
+    width: 81%;
     height: auto;
     padding-top: 5px;
 }
 
 .product2 > img {
-    padding-left: 45px;
-    width: 89%;
+    padding-left: 26px;
+    width: 82%;
     height: auto;
     padding-top: 5px;
 }
 
 .product3 > img {
-    padding-left: 21px;
-    width: 89%;
+    padding-left: 24px;
+    width: 86%;
     height: auto;
     padding-top: 5px;
 }
 
 .product4 > img {
-    padding-left: 0px;
-    width: 89%;
+    padding-left: 27px;
+    width: 87%;
     height: auto;
-    padding-top: 5px;
 }
 
 .products {
-    grid-template-columns: 163px 1fr 1fr 1fr 1fr;
-    grid-gap: 68px;
+    /*grid-template-columns: 163px 1fr 1fr 1fr 1fr;
+    grid-gap: 68px;*/
+    display: flex;
     margin-left: 33px;
-    width: 90%;
-    height: auto;
+    width: 930px;
 }
 
 .product-container {
-    padding-top: 22px;
+    padding-top: 25px;
 
 }
 
 .price {
     padding-left: 24px;
+}
+
+.price-color {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    width: 211px;
+    padding-right: 21px;
 }
 
 .color-pick {
@@ -679,24 +696,39 @@ li {
 
 
 #product2 {
-    padding-left: 34px;
+    padding-left: 19px;
 
 }
 
+.product2 .price {
+    padding-left: 20px;
+}
 
-.product2 .price-color {
-    padding-left: 10px;
+.product2 .color-pick {
+    padding-right: 5px;
+
 }
 
 #product3 {
-    padding-left: 13px;
+    padding-left: 17px;
+    margin-bottom: 12px;
+    margin-top: 7px;
+}
+
+.product3 .price {
+    padding-left: 0px;
 }
 
 
 #product4 {
-    padding-left: 0;
+    padding-left: 21px;
+    margin-top: 6px;
+    margin-bottom: 14px;
 }
 
+.product4 .price {
+    padding-left: 0;
+}
 
 
 .info {
@@ -745,39 +777,30 @@ li {
 .stories {
     display: flex;
     border: 1px dashed red;
-    margin: 0 50px 0 47px;
+    margin: 0 50px 0 45px;
     width: 930px;
-    //justify-content: space-between;
-
+    justify-content: flex-start;
 }
 
 .story1 {
     width: 277px;
+    background: no-repeat 100% 100% url('images/story1-768.png');
     margin: 0;
-    flex: 1;
-
+    flex-basis: 33%;
 }
 
 
-/*
-.story1-image {
-    height: 152px;
-    background: no-repeat url(images/story1.jpg);
-    background-position: -7px 11px;
-    background-size: 104%;
-}*/
-
 .story2 {
-   width: 277px;
+    width: 277px;
     margin: 0;
-    flex: 1;
+    flex-basis: 33%;
 }
 
 
 .story3 {
     width: 277px;
     margin: 0;
-    flex: 1;
+    flex-basis: 33%;
 }
 
 
@@ -860,8 +883,8 @@ li {
 .hamburger {
     position: absolute;
     top: 21px;
-    right: 2.8rem;
-    width: 51px;
+    right: 3rem;
+    width: 52px;
     height: 60px;
     z-index: 2;
     display: flex;
