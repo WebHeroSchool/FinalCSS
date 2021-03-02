@@ -12,41 +12,46 @@
   <div class="wrapper">
     <header class="header">
 		  <div class="menu-container">
-		  	<div class="logo" id="logo1">
-			</div>
-
-			<div class="logo2">
-			</div>
 
 			<input type="checkbox" id="checkbox-menu">
-		  	<label for="checkbox-menu">
+		  	<label for="checkbox-menu" class="checkbox-menu">
+		  	</label>
 		  		<div class="hamburger">
               		<div></div>
             	</div>
-		  	  <ul class="menu">
-		  	    <li class="menu__item"><a class="menu__link" href="#">shop</a></li>
-		  	  	<li class="menu__item"><a class="menu__link" href="#">news</a></li>
-		  	    <li class="menu__item"><a class="menu__link" href="#">team</a></li>
-			  	<li class="menu__item"><a class="menu__link" href="#">legacy</a></li>
-			    <li class="menu__item"><a class="menu__link" href="#">help</a></li>
+		  	<div class="menu">
+		  	  	<div class="menu-left">
+					<div class="logo" id="logo1">
+					</div>
+					<div class="logo2">
+					</div>
 
-			    <li>
-			    	<div class="search">
-			    		<!-- нужен? -->
-		  	  			<div class="container"> 
-		  	  				<input type="text"><a href="#"></a>
-		  	  			</div>
-		  	  		</div>
-			    </li>
+					<ul class="menu-left-items">
+				  	    <li class="menu__item"><a class="menu__link" href="#">shop</a></li>
+				  	  	<li class="menu__item"><a class="menu__link" href="#">news</a></li>
+				  	    <li class="menu__item"><a class="menu__link" href="#">team</a></li>
+					  	<li class="menu__item"><a class="menu__link" href="#">legacy</a></li>
+					    <li class="menu__item"><a class="menu__link" href="#">help</a></li>
+					</ul>
+				</div>
 
-		  	  	
+				<div class="menu-right">
+			    	<ul class="menu-right-items">
+				    	<li class="search">
+			  	  				<div class="container"> 
+			  	  					<input type="text"><a href="#"></a>
+			  	  				</div>
+				    	</li>
 
-				 <li class="menu__item"><a class="menu__link" href="#">sign in</a></li>
-				 <li class="menu__item"><a class="menu__link" href="#">cart <img class="cart" src="images/cart.png" alt=""></a></li>
-				 <li class="menu__item"><a class="menu__link" href="#"><img src="images/flagUS.png" alt=""></a></li>
-		  	  </ul>
-		  	</label>
+						<li class="menu__item"><a class="menu__link" href="#">sign in</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">cart <img class="cart" src="images/cart.png" alt=""></a></li>
+						<li class="menu__item"><a class="menu__link" href="#"><img src="images/flagUS.png" alt=""></a></li>
+		  	  		</ul>
+		  	  	</div>
+		  	</div>
+
 		  </div>
+
 	</header>
 
 	<main>
@@ -72,12 +77,13 @@
 			<div class="products">
 
 				<div class="product1">
-					<img src="images/product1.png" alt="">
 					<div class="product-container">
+					  <div class="product1-img"></div>
 						<p id="product1">Atlas Black/Rasta Axion</p>
 						  <div class="price-color">
 						    <div class="price">
-								<span>$89.00</span></div>
+								<span>$89.00</span>
+							</div>
 						    <div class="color-pick">
 								<span id="color-pick__grey"></span>
 								<span id="color-pick__black" ></span>
@@ -85,59 +91,61 @@
 								<span id="color-pick__yellow"></span>
 							</div>
 						  </div>
-					</div>
+					 </div> 
 				</div>
+				
 
 				<div class="product2">
-					<img src="images/product2.png" alt="">
 					<div class="product-container">
+					  <div class="product2-img"></div>
 						<p id="product2">Camel/Chili Pepper Axion</p>
 						  <div class="price-color">
 						    <div class="price">
-								<span>$74.00</span></div>
-							  <div class="color-pick">
+								<span>$74.00</span>
+							</div>
+							<div class="color-pick">
 							   	<span id="color-pick__grey"></span>
 								<span id="color-pick__orange" ></span>
 								<span id="color-pick__red"></span>
 								<span id="color-pick__yellow"></span>
-
-							  </div>
 							</div>
 						  </div>
-					</div>
-
-
+					  </div>
+				</div>
+				
 				<div class="product3">
-					<img src="images/product3.png" alt="">
 					<div class="product-container">
+					  <div class="product3-img"></div>
 						<p id="product3">Mandel Smoke/Rust Axion</p>
-							<div class="price-color">
-							  <div class="price">
-							    <span id="product3-price">$69.00</span></div>
-							  <div class="color-pick">
+						  <div class="price-color">
+						    <div class="price">
+							    <span>$69.00</span>
+							</div>
+							<div class="color-pick">
 							   	<span id="color-pick__grey"></span>
 								<span id="color-pick__dark-red" ></span>
 								<span id="color-pick__blue"></span>
 								<span id="color-pick__yellow"></span>
-							  </div>
 							</div>
+						  </div>
 					</div>
 				</div>
 
 				<div class="product4">
-					<img src="images/product4.png" alt="">
-					<div class="product-container">
+	 				<div class="product-container">
+	 				  <div class="product4-img"></div>
 						<p id="product4">Cloud/Electric Blue Axion</p>
-							<div class="price-color">
-							  <div class="price">
-							    <span id="product4-price">$69.00</span></div>
-							  <div class="color-pick">
+						  <div class="price-color">
+							<div class="price">
+							    <span>$69.00</span>
+							</div>
+							<div class="color-pick">
 							   	<span id="color-pick__grey"></span>
 								<span id="color-pick__light-blue" ></span>
 								<span id="color-pick__red"></span>
 								<span id="color-pick__yellow"></span>
-							  </div>
 							</div>
+						  </div>
 					</div>
 				</div>
 
