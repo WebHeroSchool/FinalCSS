@@ -386,10 +386,10 @@ li {
 }
 
 .info-image {
-    /* min-width: 645px; */
-    height: 369px;
-    background: no-repeat 100% 100% url('images/info image.jpg');
-    margin: 5.6% 3%;
+    width: 628px;
+    height: 345px;
+    background: no-repeat 100% 100% url(images/infoimage.jpg);
+    background-size: contain;
 }
 
 .info {
@@ -1003,7 +1003,7 @@ a {
     }
 
     .info-image {
-        /* min-width: 610px; */
+        
         height: 327px;
         background-position: 43% 9%;
         background-size: 95%;
